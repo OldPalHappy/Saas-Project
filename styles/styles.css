@@ -1,0 +1,30 @@
+a {
+  color: var(--font-link-color)
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.project-logo-wrapper {
+  width: 150px;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 100%;
+  align-items: center;
+  font-size: var(--size-14);
+}
+
+.header nav a {
+  color: var(--font-gray);
+  font-weight: 500;
+}
+.header nav a:nth-child(2) { color: var(--font-link-color); }
