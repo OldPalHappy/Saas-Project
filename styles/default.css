@@ -1,17 +1,8 @@
 :root {
-  --white: white;
-  --black: black;
-  --font-color-base: #666;
-  --font-color-dark: #212529;
-  --font-color-light: #b0aebe;
-  --footer: #34314b;
-  --footer-base: #2e2b45;
-  --font-color-link: #57A6ff;
-  --contrast: rgba(246, 248, 249, 0.8);
-  --success: #64ECF5;
-  --danger: #FF8B8D;
-  --grad-1: #a1ecff;
-  --grad-2: #7dbcff;
+  --font-primary-blue: rgb(55, 125, 255);
+  --font-link-color: rgb(36, 118, 254);
+  --font-gray: rgb(103, 120, 136);
+  --background-green: rgb(1, 200, 167);
 
   --size-10: 0.625rem;
   --size-14: 0.875rem;
@@ -35,7 +26,7 @@ body {
   font-size: var(--size-14);
   line-height: 1.6;
   letter-spacing: 0;
-  color: var(--font-color-base);
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -79,7 +70,6 @@ img {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: var(--font-color-dark);
   text-align: center;
   cursor: pointer;
   user-select: none;
@@ -100,7 +90,7 @@ img {
 }
 
 .btn-white {
-  background-color: var(--white);
+  background-color: white;
   color: var(--font-color-link);
   padding: 0.475rem 1.75rem;
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
