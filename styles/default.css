@@ -76,7 +76,7 @@ img {
   background-color: var(--font-primary-blue);
   border: 1px solid transparent;
   padding: var(--size-10) var(--size-20);
-  border-radius: var(--size-20);
+  border-radius: var(--size-30);
   transition: ease-in-out 0.3s;
   color: white;
   font-weight: 600;
