@@ -52,13 +52,14 @@
 .opening-buttons-wrapper {
   display: flex;
   flex-direction: row;
-  gap: var(--size-30);
   align-items: center;
-  padding-top: var(--size-10)
+  padding-top: var(--size-10);
+  flex-wrap: wrap;
 }
 
 .opening-buttons-wrapper a:nth-child(2) {
   font-weight: 800;
+  padding-left: var(--size-30);
 }
 
 /* Opening Section -Logos- */
@@ -259,6 +260,35 @@
   font-family: inherit;
 }
 
+/* Why Front Video */
+.why-front-video-wrapper {
+  margin-top: var(--size-50);
+  position: relative;
+}
+
+.video-play-button {
+  display: flex;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px grey;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.video-play-button a i {
+  font-size: var(--size-20);
+  color: black;
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
 
 
 /* Media Queries */
