@@ -343,6 +343,43 @@
   color: var(--font-gray);
 }
 
+/* Brands Section */
+.brands-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size-50) 0;
+}
+
+.brands-section > h3 {
+  font-size: 1.4rem;
+  color: var(--font-gray);
+  text-transform: uppercase;
+  padding-bottom: var(--size-30);
+}
+
+.brands-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: var(--size-18);
+}
+
+.brand-img-wrapper {
+  max-width: 150px;
+}
+
+/* Pricing section */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--size-20);
+  padding-bottom: var(--size-100);
+}
 
 
 
