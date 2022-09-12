@@ -381,6 +381,40 @@
   padding-bottom: var(--size-100);
 }
 
+.pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: var(--size-40);
+}
+
+.price-card {
+  padding: var(--size-50) var(--size-40);
+  box-shadow: 1px 5px 10px lightgrey;
+  font-size: var(--size-16);
+  color: var(--font-gray);
+  width: 400px;
+}
+
+.price-card-price {
+  font-size: var(--size-50);
+  font-weight: 600;
+  color: black;
+}
+
+.price-card span:nth-child(2) { font-size: var(--size-20); }
+
+.price-card p {
+  padding-top: var(--size-20);
+  padding-bottom: var(--size-30);
+}
+
+.no-credit-card-text { 
+  font-size: 0.75rem;
+  line-height: 0;
+}
+
+
 
 
 /* Media Queries */
