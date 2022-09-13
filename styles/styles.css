@@ -436,6 +436,87 @@
   color: var(--font-gray);
 }
 
+/* Form Section -Text- */
+.form-section {
+  background-color: var(--form-background);
+}
+
+.form-section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--size-50) var(--size-20);
+}
+
+.form-text-container {
+  color: white;
+  max-width: 400px;
+}
+
+.form-text-container h3 {
+  padding-bottom: var(--size-10);
+}
+
+.form-text-container p {
+  font-size: var(--size-18);
+}
+
+.form-text-container p:first-of-type {
+  color: var(--font-gray);
+}
+
+.form-text-container hr {
+  background-color: white;
+  height: 1px;
+  width: 50%;
+  border: 1px solid transparent;
+  margin-inline-start: 0;
+  margin: var(--size-30) 0;
+}
+
+.form-text-container p:nth-child(4) {
+  font-style: italic;
+}
+
+.form-text-container h4 {
+  margin-bottom: 0;
+  font-size: 1.375rem;
+}
+
+.form-text-container span {
+  color: var(--font-gray);
+}
+
+.form-team-people-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-30);
+  align-items: center;
+  margin-top: var(--size-50);
+}
+
+.team-member-img-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.team-member-img-wrapper img {
+  border-radius: 50%;
+}
+
+.form-team-people-wrapper div:nth-child(3) {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* Form Section -Form- */
+
+
+
+
 
 
 
