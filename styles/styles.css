@@ -384,7 +384,6 @@
 .pricing-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   padding-top: var(--size-40);
 }
 
@@ -412,6 +411,29 @@
 .no-credit-card-text { 
   font-size: 0.75rem;
   line-height: 0;
+}
+
+.pricing-components-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--size-20) var(--size-40);
+  gap: var(--size-40);
+  width: 640px;
+}
+
+.pricing-component {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.pricing-component h4 {
+  font-size: var(--size-18);
+}
+
+.pricing-component > p {
+  color: var(--font-gray);
 }
 
 
