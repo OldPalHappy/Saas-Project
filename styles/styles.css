@@ -513,6 +513,144 @@
 
 
 /* Form Section -Form- */
+.sign-up-form { /* I hate forms */
+  display: grid;
+  grid-template-areas: 
+    "form-title form-title"
+    "form-first-name form-last-name"
+    "form-first-name-2 form-last-name-2"
+    "form-budget form-country"
+    "form-about form-about"
+    "form-about form-about"
+    "form-mail form-mail"
+    "form-privacy-policy-1 form-privacy-policy-2"
+    "form-get-started form-get-started";
+  background-color: white;
+  border-radius: 8px;
+  padding: var(--size-30);
+  gap: var(--size-16);
+  max-width: 500px;
+}
+
+.sign-up-form p {
+  font-weight: 600;
+  font-size: var(--size-18);
+  grid-area: form-title;
+  margin-bottom: 0;
+}
+
+.sign-up-form input,
+.sign-up-form select,
+.sign-up-form textarea {
+  border-radius: 5px;
+  height: 45px;
+  border: 1px solid lightgray;
+  font-size: var(--size-16);
+  padding: 5px var(--size-10);
+  font-family: sans-serif;
+  resize: none;
+}
+
+.form-title { grid-area: form-title; }
+.form-first-name { grid-area: form-first-name; }
+.form-last-name { grid-area: form-last-name; }
+.form-first-name-2 { grid-area: form-first-name-2; }
+.form-last-name-2 { grid-area: form-last-name-2; }
+.form-budget { grid-area: form-budget; }
+.form-country { grid-area: form-country; }
+.form-about { grid-area: form-about; }
+.form-mail { grid-area: form-mail; }
+.form-privacy-policy-1 { grid-area: form-privacy-policy-1; }
+.form-privacy-policy-2 { grid-area: form-privacy-policy-2; }
+.form-get-started { grid-area: form-get-started; }
+
+.sign-up-form textarea { height: var(--size-150); }
+
+.form-mail {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-10);
+  align-items: flex-start;
+}
+
+.form-mail input {
+  width: 35px;
+  height: 35px;
+}
+
+.form-mail label { color: var(--font-gray); }
+
+.form-privacy-policy-1, .form-privacy-policy-2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--size-16);
+}
+
+.form-get-started {
+  justify-self: center;
+  padding-top: var(--size-20);
+}
+
+/* Footer -Resources- */
+
+.footer-container {
+  padding: var(--size-100) 0;
+}
+
+.footer-resource-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-50);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.footer-resource-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-resource-wrapper div:nth-child(1) {
+  padding-bottom: 8px;
+  font-size: var(--size-18);
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.footer-resource {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-10);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-resource .project-logo-wrapper { width: 125px; }
+.footer-resource a {
+  font-weight: 600;
+  color: var(--font-gray);
+}
+
+.footer-resource a.blue {
+  color: var(--font-link-color);
+}
+
+.hiring-block {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(36, 118, 254);
+  font-size: var(--size-10);
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+
 
 
 

@@ -98,7 +98,7 @@ h4 {
   user-select: none;
   background-color: var(--font-primary-blue);
   border: 1px solid transparent;
-  padding: var(--size-10) var(--size-20);
+  padding: var(--size-14) var(--size-30);
   border-radius: var(--size-30);
   transition: ease-in-out 0.3s;
   color: white;
