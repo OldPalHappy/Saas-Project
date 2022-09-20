@@ -35,6 +35,12 @@
   margin: 0 20px;
 }
 
+.mobile-bars {
+  font-size: var(--size-20);
+  color: var(--font-gray);
+  display: none;
+}
+
 /* Opening Section -Text- */
 .opening-container {
   display: flex;
@@ -133,7 +139,6 @@
   margin: var(--size-50) 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: var(--size-30);
@@ -174,7 +179,7 @@
   padding-right: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   align-items: center;
   justify-content: space-between;
 }
@@ -207,6 +212,7 @@
   display: flex;
   flex-direction: row;
   gap: 35px;
+  padding-top: var(--size-30);
 }
 
 .component {
@@ -298,12 +304,12 @@
   align-items: center;
   justify-content: space-around;
   padding: var(--size-100) 0;
-  flex-wrap: wrap;
 }
 
 .testimonial-image-wrapper {
   position: relative;
   width: 450px;
+  flex-shrink: 0;
 }
 
 .testimonial-image-wrapper img:nth-child(1) {
@@ -322,6 +328,8 @@
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  flex-shrink: 1;
+  padding-left: var(--size-20);
 }
 
 .testimonial-company-logo-wrapper {
@@ -452,6 +460,9 @@
 
 .form-text-container {
   color: white;
+}
+
+.form-text-container div:nth-child(1) {
   max-width: 400px;
 }
 
@@ -494,7 +505,7 @@
   flex-direction: row;
   gap: var(--size-30);
   align-items: center;
-  margin-top: var(--size-50);
+  margin-top: var(--size-20);
 }
 
 .team-member-img-wrapper {
@@ -523,7 +534,7 @@
     "form-about form-about"
     "form-about form-about"
     "form-mail form-mail"
-    "form-privacy-policy-1 form-privacy-policy-2"
+    "form-privacy-policy form-privacy-policy"
     "form-get-started form-get-started";
   background-color: white;
   border-radius: 8px;
@@ -560,8 +571,7 @@
 .form-country { grid-area: form-country; }
 .form-about { grid-area: form-about; }
 .form-mail { grid-area: form-mail; }
-.form-privacy-policy-1 { grid-area: form-privacy-policy-1; }
-.form-privacy-policy-2 { grid-area: form-privacy-policy-2; }
+.form-privacy-policy { grid-area: form-privacy-policy; }
 .form-get-started { grid-area: form-get-started; }
 
 .sign-up-form textarea { height: var(--size-150); }
@@ -580,10 +590,21 @@
 
 .form-mail label { color: var(--font-gray); }
 
-.form-privacy-policy-1, .form-privacy-policy-2 {
+.form-privacy-policy {
   text-align: center;
   font-weight: 600;
   font-size: var(--size-16);
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--size-30);
+}
+
+.form-privacy-policy > a {
+  border-bottom: 1px dashed;
+}
+
+.form-privacy-policy a:nth-child(1) {
+  color: var(--font-gray);
 }
 
 .form-get-started {
@@ -713,18 +734,6 @@
   align-self: center;
   padding-top: var(--size-50);
 }
-
-
-
-/* Media Queries */
-
-@media (max-width: 1200px) {
-  .for-people-container {
-    justify-content: center;
-    gap: 50px;
-  }
-}
-
 
 
 
