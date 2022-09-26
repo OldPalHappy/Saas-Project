@@ -12,12 +12,12 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="project-logo-wrapper">
       <img src="./assets/project_logo/logo.svg" alt="logo">
     </div>
 
-    <nav class="top-nav-desktop">
+    <nav id="topNavDesktop" class="top-nav-desktop">
       <a href="#">Home</a>
       <a href="#">Features</a>
       <a href="#">Learn</a>
@@ -504,6 +504,15 @@
   <script>
     const nav = document.getElementById("topNavMobile");
     const navButton = document.getElementById("navButton");
+    const header = document.getElementById("header");
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 300) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
 
     function toggleNav({ target }) {
       const expanded = nav.getAttribute("aria-expanded") === "true" || false;

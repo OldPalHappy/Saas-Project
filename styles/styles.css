@@ -4,13 +4,20 @@
 /* Header */
 
 .header {
-  position: sticky;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
   flex-wrap: wrap;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+}
+
+.header.sticky {
+  box-shadow: 0 0 15px rgba(211, 211, 211, 0.836);
 }
 
 .project-logo-wrapper {
@@ -70,7 +77,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-30) 0;
+  padding-bottom: var(--size-30);
+  padding-top: var(--size-100);
 }
 
 .opening-text-wrapper p {
@@ -123,10 +131,6 @@
 }
 .logo-icons-container .logo-wrapper:nth-child(2) {
   left: 140px;
-  top: 5px;
-}
-.logo-icons-container .logo-wrapper:nth-child(3) {
-  left: 375px;
   top: 5px;
 }
 .logo-icons-container .logo-wrapper:nth-child(3) {
@@ -470,6 +474,7 @@
 /* Form Section -Text- */
 .form-section {
   background-color: var(--form-background);
+  background-image: url("../assets/abstract/hire-us-transparent-pattern-bg.svg");
 }
 
 .form-section-container {

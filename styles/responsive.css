@@ -2,7 +2,7 @@
 
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) { /* Tablet layout */
   .mobile-bars  {
     display: initial;
   }
@@ -115,6 +115,115 @@
 
   [aria-expanded="true"] {
     display: flex;
+  }
+
+}
+
+@media screen and (max-width: 600px) { 
+
+  .top-nav-mobile div {
+    flex-direction: column;
+  }
+
+  .logo-icons-container {
+    width: 370px;
+    height: 320px;
+  }
+
+  .logo-icons-container .logo-wrapper:nth-child(3) {
+    left: 275px;
+  }
+  .logo-icons-container .logo-wrapper:nth-child(4) {
+    left: 26px;
+    top: 115px;
+  }
+  .logo-icons-container .logo-wrapper:nth-child(5) {
+    left: 221px;
+    top: 124px;
+  }
+  .logo-icons-container .logo-wrapper:nth-child(6) {
+    left: 105px;
+    top: 225px;
+  }
+  .logo-icons-container .logo-wrapper:nth-child(7) {
+    left: 268px;
+    top: 231px;
+  }
+
+  .benefit-card {
+    width: 90%;
+  }
+
+  .components-wrapper {
+    flex-direction: column;
+  }
+
+  .component-wrapper {
+    flex-direction: row;
+    gap: var(--size-20);
+    width: initial;
+  }
+
+  .component::after {
+    display: none;
+  }
+
+  .brands-wrapper {
+    flex-direction: column;
+  }
+
+  .brand-img-wrapper {
+    max-width: var(--size-100);
+  }
+
+  .pricing-component {
+    max-width: 90%;
+  }
+
+  .form-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-text-container hr {
+    width: 100%;
+  }
+
+  .sign-up-form { /* I hate forms */
+    display: grid;
+    grid-template-areas: 
+      "form-title"
+      "form-first-name"
+      "form-last-name"
+      "form-first-name-2"
+      "form-last-name-2"
+      "form-budget"
+      "form-country"
+      "form-about"
+      "form-about"
+      "form-mail"
+      "form-privacy-policy"
+      "form-get-started";
+  }
+
+  .form-privacy-policy a:nth-child(2) {
+    display: none;
+  }
+
+  .footer-resource-container {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .footer-resource-wrapper {
+    align-items: center;
+    width: 50%;
+  }
+
+  .footer-socials-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
 }
