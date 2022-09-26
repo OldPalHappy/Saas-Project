@@ -6,8 +6,9 @@
   .mobile-bars  {
     display: initial;
   }
-  .header > nav {
-    
+
+  .header .top-nav-desktop {
+    display: none;
   }
 
   .opening-container {
@@ -108,24 +109,12 @@
     display: block;
   }
 
-  [aria-expanded="false"] ~ a {
+  [aria-expanded="false"] {
     display: none;
   }
 
-  [aria-expanded="true"] ~ a {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: var(--size-50);
-    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
-    width: 100%;
-    text-align: right;
-    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
-  }
-
-  [aria-expanded="true"] ~ ul li a {
-    margin-right: var(--size-20);
-    color: var(--font-color-dark);
+  [aria-expanded="true"] {
+    display: flex;
   }
 
 }

@@ -16,7 +16,8 @@
     <div class="project-logo-wrapper">
       <img src="./assets/project_logo/logo.svg" alt="logo">
     </div>
-    <nav id="topNav">
+
+    <nav class="top-nav-desktop">
       <a href="#">Home</a>
       <a href="#">Features</a>
       <a href="#">Learn</a>
@@ -24,9 +25,22 @@
       <a href="#">Hire us</a>
       <a href="#"><span class="btn">Buy Now</span></a>
     </nav>
-    <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+    
+    <button id="navButton" class="navbar-toggler" aria-controls="navbarDropdown">
       <i class="fa-solid fa-bars mobile-bars"></i>
     </button>
+
+    <nav class="top-nav-mobile" id="topNavMobile" aria-expanded="false">
+      <hr>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Learn</a>
+        <a href="#">Pricing</a>
+        <a href="#">Hire us</a>
+      </div>
+      <a href="#"><span class="btn">Buy Now</span></a>
+    </nav>
   </header>
   <!-- Opening Section -->
   <section>
@@ -488,12 +502,12 @@
 
 
   <script>
-    const nav = document.getElementById("topNav");
-    const navButton = document.querySelector("button[aria-expanded]");
+    const nav = document.getElementById("topNavMobile");
+    const navButton = document.getElementById("navButton");
 
     function toggleNav({ target }) {
-      const expanded = target.getAttribute("aria-expanded") === "true" || false;
-      navButton.setAttribute("aria-expanded", !expanded);
+      const expanded = nav.getAttribute("aria-expanded") === "true" || false;
+      nav.setAttribute("aria-expanded", !expanded);
     }
     navButton.addEventListener("click", toggleNav);
   </script>
